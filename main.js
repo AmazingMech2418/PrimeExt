@@ -13,7 +13,7 @@
     var descriptor = {
         blocks: [
             // Block type, block name, function name
-            ['b', '%n Is Prime?', 3,'prime']
+            ['b', '%n Is Prime?', 'prime', 3]
         ],
 menus: {
 txt: ['hi','bye','how are you?'],
