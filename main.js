@@ -24,9 +24,10 @@ geo: ['latitude','longitude']
  
     // What blocks do go here
 ext.prime = function(a) {
+    if (a%2 === 0) {return false;} else {
 var rtrn = true;
 if (a>2) {
-for (var i=2; i<a; i++) {
+for (var i=3; i<Math.sqrt(a); i+=2) {
 if (a%i===0) {rtrn=false;}
 }
 } else {
@@ -37,8 +38,9 @@ rtrn = false;
 }
 }
 return rtrn;
+    }
 }
     // Name of Scratch Extension goes here
-    ScratchExtensions.register('Custom Reporters', descriptor, ext); 
+    ScratchExtensions.register('Prime', descriptor, ext); 
      // The name is 'Hello, World!''
 })({});
